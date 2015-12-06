@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
 	  end
 	  if session[:user_id].nil?
 	  	flash[:notice] = 'Email or password failed.'
+	  	# to set the first user, comment out the line below and go to http://localhost:3000/users/new, then uncomment it again and you are good to go.
 	  	redirect_to login_path
 	  end
   end

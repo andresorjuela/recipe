@@ -5,10 +5,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
    def authenticate
-    if session['user_id'].nil?
-	    flash[:notice] = 'You must login.'
-      redirect_to login_path
-   end
+	    if session['user_id'].nil?
+		    flash[:notice] = 'You must login.'
+	      redirect_to login_path
+	   end
    end
   
   private

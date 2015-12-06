@@ -1,28 +1,5 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic Rails app that allows you to create users in an admin and restricts the access of all pages to the registered users.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To begin with you will need to comment out line 17 in app/controllers/session_controller.rb to create the very first user by then going to http://localhost:3000/users/new and filling out the form for the first user. Then you can uncomment the line again and begin using the app.
