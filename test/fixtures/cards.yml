@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  recipe_name: MyString
+  instruction: MyText
+  portion: MyString
+  variation: MyString
+  storage: MyString
+  comment: MyText
+
+two:
+  recipe_name: MyString
+  instruction: MyText
+  portion: MyString
+  variation: MyString
+  storage: MyString
+  comment: MyText

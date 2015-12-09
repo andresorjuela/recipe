@@ -5,8 +5,12 @@ Rails.application.routes.draw do
 	get 'login', to: 'sessions#new', as: 'login'
 	get 'logout', to: 'sessions#destroy', as: 'logout'
 	get 'list', to: 'users#show', as: 'list'
+	get 'dashboard', to: 'page#dashboard', as: 'dashboard'
+	patch 'edit' => 'cards#update', as: 'edit'
 
   resources :users
+  
+  resources :cards
   	
   	get 'page/index'
 	root 'page#index'

@@ -1,0 +1,52 @@
+<%= form_for :card, url: cards_path do |f| %>
+
+	<% if @card.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@card.errors.count, "error") %> prohibited
+        this recipe from being saved:
+      </h2>
+      <ul>
+        <% @card.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	
+	<p>
+		<%= f.label :recipe_name %><br>
+		<%= f.text_field :recipe_name %>
+	</p>
+	
+	<p>
+		<%= f.label :instruction %><br>
+		<%= f.text_area :instruction %>
+	</p>
+	
+	<p>
+		<%= f.label :portion %><br>
+		<%= f.text_field :portion %>
+	</p>
+
+	<p>
+		<%= f.label :variation %><br>
+		<%= f.text_field :variation %>
+	</p>
+
+	<p>
+		<%= f.label :storage %><br>
+		<%= f.text_field :storage %>
+	</p>
+
+	<p>
+		<%= f.label :comment %><br>
+		<%= f.text_area :comment %>
+	</p>
+
+	
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

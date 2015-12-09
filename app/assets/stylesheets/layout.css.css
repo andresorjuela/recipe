@@ -1,0 +1,89 @@
+div#wrap {
+  padding: 10px 50px 40px, 40px; }
+
+table#show {
+  border: 1px solid black; }
+  table#show th, table#show td {
+    padding: 5px 10px;
+    border: 1px solid black; }
+  table#show th {
+    background-color: #e8e8e8; }
+
+div#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+div#center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+div#user {
+  float: right;
+  padding: 0px, 20px, 0px, 0px; }
+  div#user a, div#user a:link, div#user a:hover, div#user a:active, div#user a:visited {
+    color: green;
+    text-decoration: underline; }
+
+div#flash {
+  float: center;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+div#my_recipes {
+  margin-bottom: 40px; }
+  div#my_recipes a, div#my_recipes a:link, div#my_recipes a:hover, div#my_recipes a:active, div#my_recipes a:visited {
+    color: green;
+    text-decoration: underline; }
+
+div#main {
+  padding: 0px 40px 10px 40px; }
+  div#main a, div#main a:link, div#main a:hover, div#main a:active, div#main a:visited {
+    color: green;
+    text-decoration: underline; }
+  div#main h1, div#main h2, div#main h3, div#main h4 {
+    color: green; }
+
+header#page_header {
+  height: 200px;
+  overflow: hidden;
+  padding: 10px 20px;
+  color: green; }
+  header#page_header a, header#page_header a:link, header#page_header a:hover, header#page_header a:active, header#page_header a:visited {
+    color: green;
+    text-decoration: underline; }
+  header#page_header nav#utility {
+    float: right; }
+  header#page_header #logo {
+    top: 2px;
+    position: absolute; }
+  header#page_header h3 {
+    padding-top: 60px;
+    padding-right: 50px;
+    text-align: right; }
+
+footer#page_footer {
+  background-color: green;
+  height: 40px;
+  padding: 1px 0px 8px 0px;
+  color: #fff; }
+  footer#page_footer p {
+    padding-left: 40px; }
+  footer#page_footer ul {
+    padding: 0; }
+    footer#page_footer ul li {
+      display: inline;
+      margin: 0;
+      float: right;
+      padding-right: 40px; }
+    footer#page_footer ul a, footer#page_footer ul a:link, footer#page_footer ul a:hover, footer#page_footer ul a:active, footer#page_footer ul a:visited {
+      color: white;
+      text-decoration: underline; }
+
+/*# sourceMappingURL=layout.css.map */

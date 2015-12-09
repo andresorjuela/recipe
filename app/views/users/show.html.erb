@@ -1,17 +1,40 @@
-<p>
-  <strong>First name:</strong>
+<table id="show">
+
+<th>
+
+
+  <strong>First name:</strong></th>
+	<td>
   <%= @user.first_name %>
-</p>
+	</td>
+	
+</table>
 
 <p>
-  <strong>Last name:</strong>
+
+  
+  	<table id="show">
+<div id="wrap">
+	<th>
+		<strong>Last name:</strong>
+	</th>
+
+	<td>
+  
   <%= @user.last_name %>
+  </td>
+</table>
+<table id="show">
+<th>
+  <strong>Email:</strong></th>
+  <td>
+  <%= @user.email %></td>
 </p>
+</table>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+
+
+<br><br>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

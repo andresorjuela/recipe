@@ -1,0 +1,49 @@
+<table id="show">
+
+<th>
+	<b>Recipe name:</b></th>
+	<td>
+	<%= @card.recipe_name %>
+	</td>
+	
+</table>
+</p>
+
+	<b>Instruction:</b>
+	
+	<table id="show">
+<div id="wrap">
+	
+
+	<td>
+	<%= @card.instruction %>
+	</td>
+<td>
+
+	<b>Portion:</b>
+	<%= @card.portion %>
+
+<p>
+	<b>Variation:</b>
+	<%= @card.variation %>
+</p>
+
+<p>
+	<b>Storage:</b>
+	<%= @card.storage %>
+</p>
+
+<p>
+	<b>Comment:</b>
+	<%= @card.comment %>
+</p>
+</td>
+</div>
+</table>
+
+<br><br>
+
+<%= link_to 'Edit recipe', edit_card_path(@card) %> or
+<%= link_to 'View all recipes', cards_path %> or
+<%= link_to 'New recipe', new_card_path %> or
+<%= link_to 'Users', users_path %>

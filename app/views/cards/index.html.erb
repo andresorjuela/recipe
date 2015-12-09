@@ -1,0 +1,23 @@
+<h1>List of recipes</h1>
+
+<table id="show">
+	<tr>
+		<th>recipe</th>
+		<th>instruction</th>
+		<th colspan="3">Function</th>
+	</tr>
+
+	<% @cards.each do |card| %>
+		<tr>
+			<td><%= card.recipe_name %></td>
+			<td><%= card.instruction %></td>
+			
+			<td><%= link_to 'Show', card_path(card) %></td>
+			<td><%= link_to 'Edit', edit_card_path(card) %></td>
+			<td><%= link_to 'Destroy', card_path(card), method: :delete, data: { confirm: 'Are you sure you want to delete this recipe entirely? This action is not undoable!' } %></td>
+		</tr>
+	<% end %>
+</table>
+<br>
+<%= link_to 'New recipe', new_card_path %> or
+<%= link_to 'Users', users_path %>

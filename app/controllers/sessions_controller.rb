@@ -1,15 +1,14 @@
 class SessionsController < ApplicationController
-	before_filter :authenticate, :except=>[:new, :create]
+	before_filter :authenticate, :only=> [:destroy]
 	
   def new
-  	
   end
 
   def create
 	  user = User.find_by_email(params[:email])
 	  if user && user.authenticate(params[:password])
 		  session[:user_id] = user.id 
-		  redirect_to users_path
+		  redirect_to dashboard_path
 	  end
 	  if session[:user_id].nil?
 	  	flash[:notice] = 'Email or password failed.'
@@ -20,6 +19,6 @@ class SessionsController < ApplicationController
 
   def destroy
 	  session[:user_id] = nil 
-	  redirect_to root_url, notice: 'Logged out.'
+	  redirect_to login_path, notice: 'Logged out.'
   end
 end

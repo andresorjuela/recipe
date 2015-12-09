@@ -1,0 +1,153 @@
+div#wrap {
+	padding: 10px 50px 40px, 40px;
+}
+
+table#show {
+	border: 1px solid black;
+	
+	th, td {
+	padding: 5px 10px;
+	border: 1px solid black;
+	}
+	
+	th {
+			background-color: #e8e8e8;
+		}
+}
+
+div#login {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#center {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#user {
+	float: right;
+	padding: 0px, 20px, 0px, 0px;
+	
+	 a,
+	 a:link,
+	 a:hover,
+	 a:active,
+	 a:visited {
+		 color:green;
+		 text-decoration: underline;
+	 }
+}
+
+div#flash {
+	float: center;
+	color:gray;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div#my_recipes {
+	margin-bottom: 40px;
+	
+		 a,
+	 a:link,
+	 a:hover,
+	 a:active,
+	 a:visited {
+		 color:green;
+		 text-decoration: underline;
+	 }
+	} 
+	
+div#main {
+	padding: 0px 40px 10px 40px;
+	
+		 a,
+	 a:link,
+	 a:hover,
+	 a:active,
+	 a:visited {
+		 color:green;
+		 text-decoration: underline;
+	 }
+	 
+	 h1, h2, h3, h4 {
+		 color: green;
+	}
+}
+ 
+ 
+ header#page_header {
+
+	 height: 200px;
+	 overflow: hidden;
+	 padding: 10px 20px;
+	 color: green;
+	 
+	 a,
+	 a:link,
+	 a:hover,
+	 a:active,
+	 a:visited {
+		 color:green;
+		 text-decoration: underline;
+	 }
+	 
+	 nav#utility {
+		 float: right;
+		 }
+	 
+	 #logo {
+		 top: 2px;
+		 position: absolute;
+	 }
+	 
+	 h3 {
+		padding-top: 60px;
+		padding-right: 50px;
+		text-align: right;
+		}
+ }
+ 
+
+	  footer#page_footer {
+
+	 background-color: green;
+	 height: 40px;
+	 padding: 1px 0px 8px 0px;
+	 color: #fff;
+	 
+	 p {
+		 padding-left: 40px;
+		}
+	 
+	 ul {
+		 padding: 0;
+		 
+		 li {
+			 display: inline;
+			 margin: 0;
+			 float: right;
+			 padding-right: 40px;
+			 }
+			
+		 a,
+		 a:link,
+		 a:hover,
+		 a:active,
+		 a:visited {
+			 color:white;
+			 text-decoration: underline;
+		 }
+			
+	}
+	
+	
+ }
